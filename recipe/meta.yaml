@@ -23,7 +23,7 @@ requirements:
     - aiofiles
     - aiosmtplib
     - captcha
-    - httpx
+    - httpx >=0.18.2
     - pyjwt
     - python >=3.6
     - sanic
