@@ -1,7 +1,6 @@
 {% set name = "sanic-security" %}
 {% set version = "0.10.3.1" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -23,11 +22,11 @@ requirements:
     - aiofiles
     - aiosmtplib
     - captcha
-    - httpx
+    - httpx >=0.18.2
     - pyjwt
     - python >=3.6
-    - sanic
-    - tortoise-orm
+    - sanic ==21.3.4
+    - tortoise-orm ==0.17.4
 
 test:
   imports:
