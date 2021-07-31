@@ -1,5 +1,5 @@
 {% set name = "sanic-security" %}
-{% set version = "0.10.4.1" %}
+{% set version = "0.10.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sanic-security-{{ version }}.tar.gz
-  sha256: e965c16420a34239c7e770e6d8a18233e1231bce0a5c50192c42386b571e04fd
+  sha256: 338eef3c3b2803452ce238c0d765111f93f29883f969e20d8880ade75d7f6f13
 
 build:
   number: 0
