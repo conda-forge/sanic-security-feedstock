@@ -20,7 +20,6 @@ requirements:
     - python >=3.6
   run:
     - aiofiles
-    - aiosmtplib
     - captcha
     - pyjwt
     - python >=3.6
