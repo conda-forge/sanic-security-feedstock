@@ -23,7 +23,6 @@ requirements:
     - captcha
     - pyjwt
     - python >=3.6
-    - requests
     - sanic ==21.3.4
     - tortoise-orm ==0.17.4
 
