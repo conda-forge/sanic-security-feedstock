@@ -24,7 +24,7 @@ requirements:
     - captcha
     - pyjwt >=1.7.0
     - python >=3.6
-    - sanic ==21.3.4
+    - sanic
     - tortoise-orm >=0.17.0
 
 test:
