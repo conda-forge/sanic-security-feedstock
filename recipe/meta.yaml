@@ -1,5 +1,5 @@
 {% set name = "sanic-security" %}
-{% set version = "1.0.0.2" %}
+{% set version = "1.1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sanic-security-{{ version }}.tar.gz
-  sha256: 27ad142bba17885a25396249d50d88fe398a0f00abee77468e78546eb69d66d9
+  sha256: e589a25a3f4ff798aaced6807207274bf0866abc709415ceaad9f8511fc5269c
 
 build:
   number: 0
@@ -19,12 +19,13 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - aiofiles
+    - aiofiles >=0.3.0
+    - bcrypt
     - captcha
-    - pyjwt
+    - pyjwt >=1.7.0
     - python >=3.6
-    - sanic ==21.3.4
-    - tortoise-orm ==0.17.4
+    - sanic
+    - tortoise-orm >=0.17.0
 
 test:
   imports:
