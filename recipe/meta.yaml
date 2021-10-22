@@ -22,7 +22,7 @@ requirements:
     - aiofiles >=0.3.0
     - bcrypt
     - captcha
-    - pyjwt
+    - pyjwt >=1.7.0
     - python >=3.6
     - sanic ==21.3.4
     - tortoise-orm ==0.17.4
