@@ -21,7 +21,6 @@ requirements:
   run:
     - aiofiles >=0.3.0
     - argon2-cffi >=20.1.0
-    - bcrypt
     - captcha
     - pyjwt >=1.7.0
     - python >=3.6
