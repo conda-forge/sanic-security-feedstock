@@ -19,7 +19,8 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - aiofiles
+    - aiofiles >=0.3.0
+    - bcrypt
     - captcha
     - pyjwt
     - python >=3.6
