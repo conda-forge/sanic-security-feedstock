@@ -36,6 +36,7 @@ test:
     - pip check
     - pytest -vvv --capture=tee-sys sanic_security/test/tests.py
   requires:
+    - httpx
     - pip
     - pytest
 
