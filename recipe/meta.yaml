@@ -26,6 +26,9 @@ requirements:
     - sanic >=21.3.0
     - tortoise-orm >=0.17.0
 
+    # Contraints from tortoise-orm 0.19.3
+    - iso8601 <2.0.0,>=1.0.2
+
 test:
   imports:
     - sanic_security
