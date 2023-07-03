@@ -1,13 +1,13 @@
 {% set name = "sanic-security" %}
-{% set version = "1.11.1" %}
+{% set version = "1.11.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sanic-security-{{ version }}.tar.gz
-  sha256: cc36c93ff4c00978b12a46d0ce69002ec0caf272d260fe2c414e1f58814c7061
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 4c52f3cb3cb758c59b47d6bf5245036df05e31b927f037ef9e35b8eeee453073
 
 build:
   number: 0
@@ -25,6 +25,9 @@ requirements:
     - python >=3.6
     - sanic >=21.3.0
     - tortoise-orm >=0.17.0
+
+    # Contraints from tortoise-orm 0.19.3
+    - iso8601 <2.0.0,>=1.0.2
 
 test:
   imports:
