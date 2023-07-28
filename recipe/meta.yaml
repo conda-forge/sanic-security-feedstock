@@ -1,5 +1,5 @@
 {% set name = "sanic-security" %}
-{% set version = "1.11.5" %}
+{% set version = "1.11.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 16d3f2c5dfa55dbdabefbed1efab553ec1d8a2ad6f683be3b83add3c90018706
+  sha256: 01250b855b95b15dd9866472b904bd20e53e95764b468c72d6f7f8f7dc9c5f5f
 
 build:
   number: 0
@@ -17,10 +17,14 @@ build:
 requirements:
   host:
     - pip
+    - poetry-core
     - python >=3.6
+    - setuptools >=58.0.0
+    - wheel
   run:
     - argon2-cffi >=20.1.0
-    - captcha
+    - captcha ==0.4
+    - pillow ==9.5.0
     - pyjwt >=1.7.0
     - python >=3.6
     - sanic >=21.3.0
