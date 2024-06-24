@@ -17,19 +17,16 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core
-    - python >=3.6
+    - python >=3.8
     - setuptools >=58.0.0
-    - wheel
   run:
-    - argon2-cffi >=20.1.0
-    - captcha ==0.4
-    - pillow ==9.5.0
-    - pyjwt >=1.7.0
-    - python >=3.6
-    - sanic >=21.3.0
+    - python >=3.8
     - tortoise-orm >=0.17.0
-
+    - pyjwt >=1.7.0
+    - captcha >=0.4
+    - pillow >=9.5.0
+    - argon2-cffi >=20.1.0
+    - sanic >=21.3.0
     # Contraints from tortoise-orm 0.19.3
     - iso8601 <2.0.0,>=1.0.2
 
