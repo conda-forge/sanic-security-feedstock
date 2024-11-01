@@ -1,13 +1,13 @@
 {% set name = "sanic-security" %}
-{% set version = "1.12.5" %}
+{% set version = "1.12.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ad353e09655e92c9b3685674c6f47e3d9d02c63d50f4df5f4eb0aa87a149e526
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 62100b587cde8a9684724376a935996c2352fef4f8100589a6de5342b9a7dc76
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
     - pip
     - python >=3.8
     - setuptools >=58.0.0
+    - wheel
   run:
     - python >=3.8
     - tortoise-orm >=0.17.0
