@@ -1,6 +1,6 @@
-{% set python_min = python_min|default("0.1a0") %}
 {% set name = "sanic-security" %}
-{% set version = "1.13.1" %}
+{% set version = "1.13.4" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6a25ced0815539088dca78c752b1154a1028444cd60694dd4032fb17ad72500e
+  sha256: b6567c81719c7a800ae6b7b5736cb45ef1f9ea2bfe8311f3ebc19378315a10fc
 
 build:
   number: 0
@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }}.*
+    - python {{ python_min }}
     - setuptools >=58.0.0
     - wheel
   run:
@@ -31,6 +31,7 @@ requirements:
     - sanic >=21.3.0
     # Contraints from tortoise-orm 0.19.3
     - iso8601 <2.0.0,>=1.0.2
+    - secure >=1.0.1
 
 test:
   imports:
@@ -39,7 +40,7 @@ test:
     - pip check
   requires:
     - pip
-    - python ={{ python_min }}
+    - python {{ python_min }}
 
 about:
   home: https://github.com/sunset-developer/sanic-security
