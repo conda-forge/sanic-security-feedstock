@@ -1,6 +1,5 @@
 {% set name = "sanic-security" %}
 {% set version = "1.15.1" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
