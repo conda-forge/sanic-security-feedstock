@@ -1,5 +1,6 @@
 {% set name = "sanic-security" %}
-{% set version = "1.15.0" %}
+{% set version = "1.15.1" %}
+# Upstream says 3.9 is supported but secure only support 3.10+
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: eaf4c0d39ddf374dc5d6ca53f3bb40c5346437b8185589566213d1bac11fad31
+  sha256: 55a358f051a19cdecee8e4b0f0bd3e24e0b1e47b4e554debee2348e3a75b7eda
 
 build:
   number: 0
