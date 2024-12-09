@@ -1,5 +1,7 @@
 {% set name = "sanic-security" %}
 {% set version = "1.15.1" %}
+# Upstream says 3.9 is supported but secure only support 3.10+
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
