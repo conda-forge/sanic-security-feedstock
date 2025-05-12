@@ -28,9 +28,6 @@ requirements:
     - captcha >=0.4
     - argon2-cffi >=20.1.0
     - sanic >=21.3.0
-    # Contraints from tortoise-orm 0.19.3
-    - iso8601 <2.0.0,>=1.0.2
-    - secure >=1.0.1
 
 test:
   imports:
