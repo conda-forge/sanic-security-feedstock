@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sanic-security
-  version: "1.17.4"
+  version: "1.17.5"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 14ea4a811c33202dcb66a5eae88de2f0fe3a9e72573cb1bac6da3f5712282be8
+  sha256: a8ceda65b5de88c42085af026f5fb59de15c562bcc8c7be697de5b29481e959c
 
 build:
   number: 0
