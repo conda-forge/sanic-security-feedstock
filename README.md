@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sanic-security` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install sanic-security
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install sanic-security
 ```
 
-It is possible to list all of the versions of `sanic-security` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add sanic-security
+# for installing globally
+pixi global install sanic-security
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `sanic-security` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search sanic-security --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search sanic-security --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search sanic-security --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds sanic-security --channel conda-forge
 # List dependencies of `sanic-security`:
 mamba repoquery depends sanic-security --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
