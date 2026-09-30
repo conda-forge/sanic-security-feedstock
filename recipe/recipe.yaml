@@ -37,7 +37,9 @@ tests:
       imports:
         - sanic_security
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A powerful, simple, and async security library for Sanic.
