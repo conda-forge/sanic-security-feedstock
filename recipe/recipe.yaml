@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: sanic-security
-  version: "1.17.7"
+  version: "1.17.8"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 3ef41a627c1aaf91a57e4e33604c60e34faed21777aa5262ddf7dc85302976ee
+  sha256: 6384f77a070605898d1f37e526da83705b68b551466018eef11720bf577dc202
 
 build:
   number: 0
@@ -37,7 +37,9 @@ tests:
       imports:
         - sanic_security
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A powerful, simple, and async security library for Sanic.
